@@ -7,10 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "brand-dark": "#492421",
+        "brand-light": "#E3CEB6",
+      },
+      fontFamily: {
+        title: ["annabelle-jf"],
+        body: ["acumin-pro-extra-condensed"],
+        wide: ["acumin-pro-wide"],
       },
     },
   },
