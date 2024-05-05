@@ -1,6 +1,9 @@
+import Image from 'next/image'
 import Logo from "@/components/logo"
 import Button from "@/components/button"
 import WrapperSection from "@/wrappers/wrapper-section"
+
+import videoCoverImage from '@public/img/video-cover.jpg'
 
 export default function Home() {
     return (
@@ -8,8 +11,19 @@ export default function Home() {
             <section className="pt-24">
                 <WrapperSection>
                     <div>
-                        <div className="w-full pt-[75%] mb-16 bg-white rounded-[80px] bg-[url('/img/video-cover.jpg')] bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
+                        <div className="relative overflow-hidden w-full pt-[75%] mb-16 bg-white rounded-[80px] bg-brand-dark bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
                             {/* play button */}
+                            <Image
+                                src={videoCoverImage}
+                                alt="film cover image"
+                                className="absolute top-0 left-0 w-full h-full"
+                                placeholder="blur"
+                                quality={100}
+                                fill
+                                style={{
+                                    objectFit: 'cover',
+                                }}
+                                />
                         </div>
                     </div>
                     

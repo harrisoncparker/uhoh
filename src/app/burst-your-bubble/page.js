@@ -56,9 +56,9 @@ export default function BurstYourBubble() {
                         {productsData.map((product, key) => (
                             <a href={`/${product.slug}`} className="w-full group/button" key={key}>
                                 <Image 
-                                    src={`/img/${product.image}`} 
-                                    width={301} 
-                                    height={377}
+                                    src={product.image}
+                                    // src={knowItAllImage}
+                                    placeholder="blur"
                                     alt={product.slug}
                                     className="rounded-[40px] border-2 border-brand-dark mb-8"
                                     />
