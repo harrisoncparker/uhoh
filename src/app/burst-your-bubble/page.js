@@ -53,8 +53,8 @@ export default function BurstYourBubble() {
             <section>
                 <WrapperSection>
                     <div className="grid grid-cols-4 gap-7">
-                        {productsData.map((product) => (
-                            <a href={`/${product.slug}`} className="w-full group/button">
+                        {productsData.map((product, key) => (
+                            <a href={`/${product.slug}`} className="w-full group/button" key={key}>
                                 <Image 
                                     src={`/img/${product.image}`} 
                                     width={301} 
