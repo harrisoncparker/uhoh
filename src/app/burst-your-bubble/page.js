@@ -58,7 +58,8 @@ export default function BurstYourBubble() {
                                 <Image 
                                     src={`/img/${product.image}`} 
                                     width={301} 
-                                    height={377} 
+                                    height={377}
+                                    alt={product.slug}
                                     className="rounded-[40px] border-2 border-brand-dark mb-8"
                                     />
                                 <div className='flex justify-center'>
