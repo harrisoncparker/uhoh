@@ -57,7 +57,6 @@ export default function BurstYourBubble() {
                             <a href={`/${product.slug}`} className="w-full group/button" key={key}>
                                 <Image 
                                     src={product.image}
-                                    // src={knowItAllImage}
                                     placeholder="blur"
                                     alt={product.slug}
                                     className="rounded-[40px] border-2 border-brand-dark mb-8"

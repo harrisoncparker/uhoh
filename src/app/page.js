@@ -11,7 +11,7 @@ export default function Home() {
             <section className="pt-24">
                 <WrapperSection>
                     <div>
-                        <div className="relative overflow-hidden w-full pt-[75%] mb-16 bg-white rounded-[80px] bg-brand-dark bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
+                        <div className="relative overflow-hidden w-full pt-[75%] mb-16 bg-white rounded-[80px] bg-brand-purple-700 bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
                             {/* play button */}
                             <Image
                                 src={videoCoverImage}

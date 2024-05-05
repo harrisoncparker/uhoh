@@ -12,6 +12,11 @@ module.exports = {
       colors: {
         "brand-dark": "#492421",
         "brand-light": "#E3CEB6",
+        "brand-purple": {
+          "DEFAULT": "#E4C3EB",
+          "500" : "#E4C3EB",
+          "700" : "#975BAD",
+        }
       },
       fontFamily: {
         title: ["annabelle-jf"],
