@@ -1,5 +1,5 @@
 import Logo from "@/components/logo"
-import WrapperSection from "@//wrappers/wrapper-section"
+import WrapperSection from "@/wrappers/wrapper-section"
 
 export default function Home() {
     return (

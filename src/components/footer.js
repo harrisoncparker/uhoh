@@ -1,4 +1,4 @@
-import WrapperFull from "@//wrappers/wrapper-full"
+import WrapperFull from "@/wrappers/wrapper-full"
 
 export default function Footer() {
     return (
