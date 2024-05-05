@@ -13,6 +13,6 @@ export const productsData = [
     },
     {
         slug: 'know-it-all',
-        image: 'know-it-all.jpg',
+        image: 'know-It-all.jpg',
     },
 ]
