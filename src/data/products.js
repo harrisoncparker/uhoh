@@ -77,7 +77,7 @@ export const products = [
         slug: 'know-it-all',
         image: knowItAllImage,
         title: 'Know-It-All',
-        downlaod: '/img/know-it-all.jpg',
+        download: '/img/know-it-all.jpg',
         resources: [
             {
                 title: 'What Do We Do About the Biases in AI',
@@ -108,4 +108,16 @@ export const additionalResources = [
 
 export const getProduct = (searchSlug) => {
     return products.find(product => product.slug === searchSlug)
+}
+
+export const getOtherProducts = (mainProductSlug) => {
+    let otherProducts = [...products]
+
+    for (let i = 0; i < otherProducts.length; i++) {
+        let currentProduct = otherProducts.shift()
+        if (currentProduct.slug === mainProductSlug) break;
+        otherProducts.push(currentProduct)
+    }
+
+    return otherProducts
 }

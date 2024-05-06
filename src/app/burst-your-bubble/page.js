@@ -1,5 +1,6 @@
 import Link from '@/components/link'
 import WrapperSection from '@/wrappers/wrapper-section'
+import WrapperHome from '@/wrappers/wrapper-home'
 import ProductCard from '@/components/product-card'
 
 import { products } from '@/data/products'
@@ -19,13 +20,13 @@ export default function BurstYourBubble() {
                                 Reality was being developed for able-bodied users with little to no
                                 regard for people with disabilities. As someone with a limb difference,
                                 I found that tasks I'm able to perform in the 'real world' were impossible
-                                in the virtual one, an experience <Link href="https://google.com">shared across the disabled community</Link>.
+                                in the virtual one, an experience <Link href="https://www.wired.com/story/virtual-reality-accessibility-disabilities/">shared across the disabled community</Link>.
                             </p>
                             <p className="mt-8">
                                 This unsettling discovery then opened a can of worms regarding emerging 
                                 tech and the way it holds a mirror up to society - which let's face it, 
-                                isn't always pretty! From <Link href="https://google.com">skeuomorphic sexism</Link> and <Link href="https://google.com">subreddit culture wars</Link>, 
-                                to <Link href="https://google.com">AI's inherent bias'</Link>; When it comes 
+                                isn't always pretty! From <Link href="https://thenextweb.com/news/ai-could-hardwire-sexism-into-the-future">skeuomorphic sexism</Link> and <Link href="https://gnet-research.org/2022/05/23/examining-incel-subculture-on-reddit/">subreddit culture wars</Link>, 
+                                to <Link href="https://hbr.org/2019/10/what-do-we-do-about-the-biases-in-ai">AI's inherent bias'</Link>; When it comes 
                                 to cutting edge tech, ethics seem to have fallen to the bottom of the to-do 
                                 list. After several attempts to do something about this I finally realised 
                                 that as an experienced commercial Director, if there's one thing I know 
@@ -38,7 +39,7 @@ export default function BurstYourBubble() {
                                 laughed. Shall we?
                             </p>
                             <p className="mt-8">
-                                Go on, I dare you... <Link href="/burst-your-bubble">burst your bubble.</Link>
+                                Go on, I dare you... burst your bubble.
                             </p>
                             <p className="font-normal italic mt-8">
                                 <Link href="https://emilyfredasharp.com">

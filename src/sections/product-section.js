@@ -5,23 +5,18 @@ import ProductCard from '@/components/product-card'
 import ButtonBasket from '@/components/button-basket'
 import Link from '@/components/link'
 
-
-import { products } from '@/data/products'
-import { additionalResources } from '@/data/products'
+import { additionalResources, getOtherProducts } from '@/data/products'
 
 export default function ProductSection({ children, subtitle, product }) {
 
-    const otherProducts = products.filter((products) => {
-        return products.slug !== product.slug
-    })
-
+    const otherProducts = getOtherProducts(product.slug)
     const resources = product.resources.concat(additionalResources)
 
     return (
         <section className="pt-12">
             <WrapperSection>
                 <div className="grid grid-cols-2 gap-12">
-                    <div classNames="sticky top-10 self-start">
+                    <div className="sticky top-10 self-start">
                         <Image src={product.image}
                             placeholder="blur"
                             alt={product.slug}
@@ -29,7 +24,7 @@ export default function ProductSection({ children, subtitle, product }) {
                             />
                         <div className="grid grid-cols-3 gap-4">
                             {otherProducts.map((otherProduct, key) => (
-                                <ProductCard product={otherProduct} key={key} />
+                                <ProductCard product={otherProduct} key={key} size="sm" />
                             ))}
                         </div>
                     </div>
@@ -53,14 +48,17 @@ export default function ProductSection({ children, subtitle, product }) {
                         </div>
                         {resources.map((resource, key) => (
                             <div className="mt-8" key={key}>
-                                <p className="font-bold italic">
-                                    <Link href={resource.link}>
-                                        {resource.title}
-                                    </Link>
+                                <p>
+                                    <span className="font-bold italic">
+                                        <Link href={resource.link}>
+                                            {resource.title}
+                                        </Link>
+                                    </span>
+                                    <span class="ml-2">
+                                        | {resource.source}
+                                    </span>
                                 </p>
-                                <p className="mt-1">
-                                    {resource.source}
-                                </p>
+                                
                             </div>
                         ))}
                     </div>

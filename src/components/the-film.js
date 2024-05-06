@@ -38,7 +38,11 @@ export default function TheFilm() {
             <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
                 <div className="fixed inset-0 w-screen h-screen z-50 bg-brand-light">
                     <Dialog.Panel className="w-full h-full">
-                        <button onClick={() => setIsOpen(false)} className="absolute top-4 right-8">close</button>
+                        <button 
+                            onClick={() => setIsOpen(false)} 
+                            className="absolute top-4 right-8 hover:underline hover:text-brand-purple-700">
+                                close
+                            </button>
                         <div className="absolute w-full top-1/2 -translate-y-1/2 left-0 flex justify-center">
                             <Image src={spinnerSVG} width="128" height="128" className="animate-spin size-20" alt="" />
                         </div>
