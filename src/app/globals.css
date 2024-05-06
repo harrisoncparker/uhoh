@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .ar-4-3 {
+        width: min(100vw, 133vh); /* RELEVANT LINE */
+        height: min(100vh, 75vw); /* RELEVANT LINE */
+    }
+}
