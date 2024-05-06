@@ -41,7 +41,7 @@ export default function TheFilm() {
                         <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4">close</button>
                         <div className="absolute w-full top-1/2 -translate-y-1/2 left-0 flex justify-center">
                             {/* <div className="bg-brand-dark animate-spin size-20" /> */}
-                            <Image src={spinnerSVG} width="128" height="128" className="animate-spin" />
+                            <Image src={spinnerSVG} width="128" height="128" className="animate-spin size-20" alt="" />
                         </div>
                         <div className="ar-4-3 m-auto">
                             <Vimeo
