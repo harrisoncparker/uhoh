@@ -30,10 +30,10 @@ export default function ProductSection({ children, subtitle, product }) {
                     </div>
                 
                     <div className="">
-                        <h1 className="text-7xl	font-title stroke-2">
+                        <h1 className="text-7xl leading-[1.4] font-title stroke-2">
                             {product.title}
                         </h1>
-                        <p className="italic mt-8">
+                        <p className="italic mt-4">
                             {subtitle}
                         </p>
                         <p className="font-bold mt-8">
