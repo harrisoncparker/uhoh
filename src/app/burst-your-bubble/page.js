@@ -52,7 +52,7 @@ export default function BurstYourBubble() {
             </section>
             <section>
                 <WrapperSection>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-16 mt-10 mx-auto max-w-[300px] sm:max-w-[600px] lg:max-w-none">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-16 mt-10 mx-auto max-w-[600px] lg:max-w-none">
                         {products.map((product, key) => (
                             <ProductCard product={product} key={key} />
                         ))}

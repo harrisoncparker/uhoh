@@ -17,10 +17,10 @@ export default function Button({ children, href, sparkle = false, inert = false,
     let sizeClass = ''
     switch(size) {
         case 'sm':
-            sizeClass = 'text-xl px-8 pt-2 pb-3'
+            sizeClass = 'text-lg sm:text-xl px-6 pt-1 pb-2 sm:px-8 sm:pt-2 sm:pb-3'
             break;
         default:
-            sizeClass = 'px-12 pt-3 pb-5'
+            sizeClass = 'text-lg sm:text-2xl px-6 pt-1 pb-2 sm:px-12 sm:pt-3 sm:pb-5'
     }
 
     const wrapperClassName = `

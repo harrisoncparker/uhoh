@@ -23,7 +23,7 @@ export default function ProductSection({ children, subtitle, product }) {
                             className="rounded-[20px] sm:rounded-[40px] border-2 border-brand-dark mb-8 md:mb-4 hidden md:block"
                             />
                         <div className="w-full h-[2px] bg-brand-dark mb-16 md:hidden" />
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-16">
+                        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-16">
                             {otherProducts.map((otherProduct, key) => (
                                 <ProductCard product={otherProduct} key={key} size="sm" />
                             ))}
