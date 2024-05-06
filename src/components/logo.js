@@ -3,10 +3,10 @@ export default function Home({ size = 'md'}) {
     let sizeClass = ""
     switch (size) {
         case 'sm': 
-            sizeClass = "text-5xl"
+            sizeClass = "text-4xl md:text-5xl"
             break;
         default: 
-            sizeClass = "text-7xl"
+            sizeClass = "text-6xl md:text-7xl"
     }
 
     return (

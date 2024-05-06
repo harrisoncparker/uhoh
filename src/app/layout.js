@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/wve7nip.css" />
       </head>
-      <body className="bg-brand-light text-brand-dark text-2xl font-body pt-1">
+      <body className="bg-brand-light text-brand-dark text-xl sm:text-2xl font-body pt-1">
         <main>
           <Header />
           {children}

@@ -19,7 +19,7 @@ export default function TheFilm() {
         <div>
             <button 
                 onClick={() => setIsOpen(true)}
-                className="relative overflow-hidden w-full pt-[75%] bg-white rounded-[80px] bg-brand-purple-700 bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
+                className="relative overflow-hidden w-full pt-[75%] bg-white rounded-[40px] md:rounded-[80px] bg-brand-purple-700 bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
                 <Image
                     src={videoCoverImage}
                     alt="film cover image"

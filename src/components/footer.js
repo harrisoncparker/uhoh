@@ -2,9 +2,9 @@ import WrapperFull from "@/wrappers/wrapper-full"
 
 export default function Footer() {
     return (
-        <footer className="mt-28 text-xl">
+        <footer className="mt-20 md:mt-28 text-xl">
             <WrapperFull>
-                <div className="flex justify-between w-full border-t-2 border-brand-dark font-body pt-12 pb-10">
+                <div className="sm:flex justify-between w-full border-t-2 border-brand-dark font-body pt-12 pb-10">
                     <ul>
                         <li className="mb-1">
                             <a href="/burst-your-bubble" className="border-brand-dark hover:border-b-[2px]">
@@ -37,7 +37,7 @@ export default function Footer() {
                             </a>
                         </li>
                     </ul>
-                    <ul className="text-right">
+                    <ul className="sm:text-right">
                         <li className="mb-1">
                             <a href="https://emilyfredasharp.com" target="_blank" rel="noopener" className="border-brand-dark hover:border-b-[2px]">
                                 emilyfredasharp.com

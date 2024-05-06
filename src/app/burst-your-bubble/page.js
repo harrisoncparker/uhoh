@@ -11,7 +11,7 @@ export default function BurstYourBubble() {
             <section className="pt-12">
                 <WrapperSection>
                     <div>
-                        <h1 className="text-7xl	font-title stroke-2">
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl	font-title stroke-2">
                             Director's Statement
                         </h1>
                         <div className="font-bold">
@@ -52,7 +52,7 @@ export default function BurstYourBubble() {
             </section>
             <section>
                 <WrapperSection>
-                    <div className="grid grid-cols-4 gap-7 mt-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-16 mt-10 m-auto max-w-[300px] sm:max-w-[600px] lg:max-w-none">
                         {products.map((product, key) => (
                             <ProductCard product={product} key={key} />
                         ))}
