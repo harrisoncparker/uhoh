@@ -10,7 +10,7 @@ export default function Home({ size = 'md'}) {
     }
 
     return (
-        <h1 className={`${sizeClass} font-title stroke-2`}>
+        <h1 className={`${sizeClass} font-title stroke-2 ml-2`}>
             Uh<span className="font-wide font-black">OH</span>
         </h1>
     );

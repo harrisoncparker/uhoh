@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-brand-light text-brand-dark text-xl sm:text-2xl font-body pt-1">
         <main>
-          <Header />
+          {/* <Header /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </main>
       </body>
     </html>
