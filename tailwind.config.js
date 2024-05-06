@@ -11,7 +11,10 @@ module.exports = {
     extend: {
       colors: {
         "brand-dark": "#492421",
-        "brand-light": "#E3CEB6",
+        "brand-light": {
+          "DEFAULT": "#E3CEB6",
+          "tranparent": "#E3CEB690",
+        },
         "brand-purple": {
           "DEFAULT": "#E4C3EB",
           "500" : "#E4C3EB",
