@@ -30,7 +30,7 @@ export default function CreditsPage() {
                         </h1>
                         {creditsData.map((creditSection, key) => <CreditSection creditSection={creditSection} key={key} />)}
                     </div>
-                    <div className="flex-grow ml-40">
+                    <div className="flex-grow ml-48">
                         <Image 
                             src={mainPosterImage}
                             placeholder="blur"

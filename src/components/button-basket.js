@@ -14,7 +14,6 @@ export default function ButtonBasket({ href, filename = 'UhOh - Poster.jpg' }) {
     return (
         <a href={href}
         className={wrapperClassName}
-        target="_blank"
         download={filename}
         title="download poster"
         >
