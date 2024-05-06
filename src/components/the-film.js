@@ -38,10 +38,10 @@ export default function TheFilm() {
             <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
                 <div className="fixed inset-0 w-screen h-screen z-50 bg-brand-light">
                     <Dialog.Panel className="w-full h-full">
-                        <div className="absolute w-full top-1/2 -translate-y-1/2 left-0 flex justify-center">
-                            <Image src={spinnerSVG} width="128" height="128" className="animate-spin size-20" alt="" />
-                        </div>
-                        <div className="h-full flex items-center">
+                        <div className="relative h-svh flex items-center">
+                            <div className="absolute w-full top-1/2 -translate-y-1/2 left-0 flex justify-center">
+                                <Image src={spinnerSVG} width="128" height="128" className="animate-spin size-20" alt="" />
+                            </div>
                             <div className="ar-4-3 m-auto bg-brand-purple">
                                 <Vimeo
                                     video="942938107"
