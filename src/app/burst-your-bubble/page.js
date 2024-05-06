@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import Link from '@/components/link'
-import Button from '@/components/button'
 import WrapperSection from '@/wrappers/wrapper-section'
+import ProductCard from '@/components/product-card'
 
-import { productsData } from '@/data/products'
+import { products } from '@/data/products'
 
 export default function BurstYourBubble() {
     return (
@@ -53,20 +52,8 @@ export default function BurstYourBubble() {
             <section>
                 <WrapperSection>
                     <div className="grid grid-cols-4 gap-7">
-                        {productsData.map((product, key) => (
-                            <a href={`/${product.slug}`} className="w-full group/button" key={key}>
-                                <Image 
-                                    src={product.image}
-                                    placeholder="blur"
-                                    alt={product.slug}
-                                    className="rounded-[40px] border-2 border-brand-dark mb-8"
-                                    />
-                                <div className='flex justify-center'>
-                                    <Button href={`/${product.slug}`} isLink={false} inert={true}>
-                                        Read more...
-                                    </Button>
-                                </div>
-                            </a>
+                        {products.map((product, key) => (
+                            <ProductCard product={product} key={key} />
                         ))}
                     </div>
                 </WrapperSection>

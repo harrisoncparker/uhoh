@@ -1,4 +1,4 @@
-export default function Sparkle({ svgClass = '' }) {
+export default function SparkleIcon({ svgClass = '' }) {
     return (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="#492421" xmlns="http://www.w3.org/2000/svg" className={svgClass}>
             <path 

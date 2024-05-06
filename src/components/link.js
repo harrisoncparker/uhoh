@@ -4,7 +4,7 @@ export default function Link({ children, href }) {
 
     return (
         <a href={href} 
-            className="border-b-2 border-brand-dark inline-block h-10" 
+            className="x:border-b-2 x:border-brand-dark underline inline-block h-10" 
             target={external ? "_blank" : "_self"}
             rel={external ? "noopener" : ""}
             >
