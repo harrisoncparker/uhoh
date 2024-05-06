@@ -7,7 +7,7 @@ import { products } from '@/data/products'
 export default function BurstYourBubble() {
     return (
         <>
-            <section className="pt-32">
+            <section className="pt-12">
                 <WrapperSection>
                     <div>
                         <h1 className="text-7xl	font-title stroke-2">
@@ -51,7 +51,7 @@ export default function BurstYourBubble() {
             </section>
             <section>
                 <WrapperSection>
-                    <div className="grid grid-cols-4 gap-7">
+                    <div className="grid grid-cols-4 gap-7 mt-10">
                         {products.map((product, key) => (
                             <ProductCard product={product} key={key} />
                         ))}

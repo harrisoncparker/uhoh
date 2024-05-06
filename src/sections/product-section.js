@@ -18,9 +18,9 @@ export default function ProductSection({ children, subtitle, product }) {
     const resources = product.resources.concat(additionalResources)
 
     return (
-        <section>
+        <section className="pt-12">
             <WrapperSection>
-                <div className="grid grid-cols-2 gap-12 pt-28">
+                <div className="grid grid-cols-2 gap-12">
                     <div classNames="sticky top-10 self-start">
                         <Image src={product.image}
                             placeholder="blur"

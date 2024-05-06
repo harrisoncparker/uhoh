@@ -19,7 +19,7 @@ export default function TheFilm() {
         <div>
             <button 
                 onClick={() => setIsOpen(true)}
-                className="relative overflow-hidden w-full pt-[75%] mb-16 bg-white rounded-[80px] bg-brand-purple-700 bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
+                className="relative overflow-hidden w-full pt-[75%] bg-white rounded-[80px] bg-brand-purple-700 bg-cover bg-no-repeat bg-center border-2 border-brand-dark">
                 <Image
                     src={videoCoverImage}
                     alt="film cover image"
@@ -38,12 +38,11 @@ export default function TheFilm() {
             <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
                 <div className="fixed inset-0 w-screen h-screen z-50 bg-brand-light">
                     <Dialog.Panel className="w-full h-full">
-                        <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4">close</button>
+                        <button onClick={() => setIsOpen(false)} className="absolute top-4 right-8">close</button>
                         <div className="absolute w-full top-1/2 -translate-y-1/2 left-0 flex justify-center">
-                            {/* <div className="bg-brand-dark animate-spin size-20" /> */}
                             <Image src={spinnerSVG} width="128" height="128" className="animate-spin size-20" alt="" />
                         </div>
-                        <div className="ar-4-3 m-auto">
+                        <div className="ar-4-3 m-auto bg-brand-purple">
                             <Vimeo
                                 video="942938107"
                                 responsive="true"

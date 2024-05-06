@@ -21,7 +21,7 @@ const CreditSection = ({ creditSection }) => {
 
 export default function CreditsPage() {
     return (
-        <section className="pt-32">
+        <section className="pt-12">
             <WrapperSection>
                 <div className="flex">
                     <div className="text-right">
