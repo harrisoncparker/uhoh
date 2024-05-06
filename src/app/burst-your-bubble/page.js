@@ -11,7 +11,7 @@ export default function BurstYourBubble() {
             <section className="pt-12">
                 <WrapperSection>
                     <div>
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl	font-title stroke-2">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.5] sm:leading-[1.5] md:leading-[1.5] font-title stroke-2">
                             Director's Statement
                         </h1>
                         <div className="font-bold">

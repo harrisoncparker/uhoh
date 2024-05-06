@@ -33,7 +33,7 @@ export default function ProductSection({ children, subtitle, product }) {
                     <div className="order-first md:order-none">
                         <div className="flex">
                             <div>
-                                <h1 className="text-5xl sm:text-6xl md:text-7xl leading-[1.4] font-title stroke-2">
+                                <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.5] sm:leading-[1.5] md:leading-[1.5] font-title stroke-2">
                                     {product.title}
                                 </h1>
                                 <p className="italic mt-4">

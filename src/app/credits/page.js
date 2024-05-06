@@ -25,7 +25,7 @@ export default function CreditsPage() {
             <WrapperHome>
                 <div className="flex flex-col-reverse md:flex-row justify-center">
                     <div className="text-center md:text-right mt-16 md:mt-0">
-                        <h1 className="text-5xl sm:text-6xl md:text-7xl	font-title stroke-2 mb-10 md:mb-20">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.5] sm:leading-[1.5] md:leading-[1.5] font-title stroke-2 mb-10 md:mb-20">
                             Credits
                         </h1>
                         {creditsData.map((creditSection, key) => <CreditSection creditSection={creditSection} key={key} />)}
