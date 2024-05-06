@@ -16,7 +16,7 @@ export default function ProductSection({ children, subtitle, product }) {
         <section className="pt-12">
             <WrapperSection>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div className="m-auto max-w-[500px] md:max-w-none">
+                    <div className="m-x-auto max-w-[500px] md:max-w-none">
                         <Image src={product.image}
                             placeholder="blur"
                             alt={product.slug}
