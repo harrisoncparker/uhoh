@@ -86,7 +86,7 @@ export const products = [
             },
             {
                 title: 'Google\'s Photo App Still Can\'t Find Gorillas. And neither can Apple\'s.',
-                link: '',
+                link: 'https://www.nytimes.com/2023/05/22/technology/ai-photo-labels-google-apple.html',
                 source: 'New York Times',
             },
             {
