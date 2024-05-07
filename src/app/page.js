@@ -23,7 +23,7 @@ export default function Home() {
                             not so wonderful world of dystopian tech.
                         </p>
                         <div className="mt-16">
-                            <Button href="/burst-your-bubble" sparkle={true}>
+                            <Button href="/burst-your-bubble" sparkle={true} size="lg">
                                 Burst your bubble
                             </Button>
                         </div>

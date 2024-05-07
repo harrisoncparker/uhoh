@@ -1,6 +1,5 @@
 import Link from '@/components/link'
 import WrapperSection from '@/wrappers/wrapper-section'
-import WrapperHome from '@/wrappers/wrapper-home'
 import ProductCard from '@/components/product-card'
 
 import { products } from '@/data/products'
@@ -35,7 +34,7 @@ export default function BurstYourBubble() {
                             <p className="mt-8">
                                 Well these days it seems like most of life comes with a dystopia warning 
                                 and at times I tend to think that if I don't laugh, I'll cry. So if you ask 
-                                me, I think it's high time all we took a long, hard look in the mirror and 
+                                me, I think it's high time we all took a long, hard look in the mirror and 
                                 laughed. Shall we?
                             </p>
                             <p className="mt-8">

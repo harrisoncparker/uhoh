@@ -9,7 +9,7 @@ export default function PipeLines() {
     return (
         <ProductSection 
             product={product}
-            subtitle="Feeling like you don't fit in? Why not find the right kind of people, with one of our tried and tested Pipe Lines."
+            subtitle="Feeling like you don't fit in? Why not find the right kind of people with one of our tried and tested Pipe Lines."
             >
             In less than a decade our relationship to the digital world has gone from an active one 
             (where we search) to a passive one (where we consume). Platforms like YouTube and TikTok 
