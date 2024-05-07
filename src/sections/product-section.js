@@ -41,12 +41,7 @@ export default function ProductSection({ children, subtitle, product }) {
                                 <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.5] sm:leading-[1.5] md:leading-[1.5] font-title stroke-2">
                                     {product.title}
                                 </h1>
-                                <p className="italic mt-4">
-                                    {subtitle}
-                                </p>
-                                <p className="font-bold mt-8">
-                                    {children}
-                                </p>
+                                {children}
                                 <div className="md:w-3/4 h-[2px] bg-brand-dark mt-8" />
                                 <div className="flex items-center mt-8">
                                     <ButtonBasket href={product.download} filename={`UhOh - ${product.title} - Poster.jpg`} />
