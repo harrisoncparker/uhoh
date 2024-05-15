@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
       </head>
-      <body className="bg-brand-light text-brand-dark text-lg 2xl:text-2xl font-body pt-1">
+      <body className="bg-brand-light text-brand-dark text-xl sm:text-2xl font-body pt-1">
         <main>
           <Header />
           {children}

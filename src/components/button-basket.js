@@ -13,7 +13,7 @@ export default function ButtonBasket({ href, filename = 'UhOh - Poster.jpg' }) {
 
     const wrapperClassName = `
         group/button
-        px-6 pt-1 pb-2
+        px-8 pt-2 pb-3
         inline-block relative border-2 rounded-[100%] border-brand-dark cursor-pointer
         hover:bg-brand-purple-700 group-hover/button:bg-brand-purple-700
         hover:text-brand-light group-hover/button:text-brand-light
@@ -28,9 +28,9 @@ export default function ButtonBasket({ href, filename = 'UhOh - Poster.jpg' }) {
                 title="download poster"
                 onClick={() => setDownloadMsgOpen(true)} 
                 >
-                <BasketIcon svgClass="scale-90 inline-block group-hover/button:fill-brand-light"/>
-                <span className="block absolute top-2 right-3 -translate-y-1/2 translate-x-1/2 rounded-full bg-brand-light size-6 group-hover/button:bg-transparent" />
-                <SparkleIcon svgClass="absolute top-2 right-3 -translate-y-1/2 translate-x-1/2 size-8 stroke-0 stroke-brand-purple-700 group-hover/button:fill-brand-light group-hover/button:stroke-1" />
+                <BasketIcon svgClass="inline-block group-hover/button:fill-brand-light"/>
+                <span className="block absolute top-2 right-4 -translate-y-1/2 translate-x-1/2 rounded-full bg-brand-light size-8 group-hover/button:bg-transparent" />
+                <SparkleIcon svgClass="absolute top-2 right-4 -translate-y-1/2 translate-x-1/2 size-10 stroke-0 stroke-brand-purple-700 group-hover/button:fill-brand-light group-hover/button:stroke-1" />
             </a>
             <Dialog open={downloadMsgOpen} onClose={() => setDownloadMsgOpen(false)}>
                 <div className="fixed inset-0 w-screen h-dvh z-50">
