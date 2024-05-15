@@ -187,7 +187,7 @@ export const creditsData = [
         ],
     },
     {
-        heading: '2nd AC Trainee',
+        heading: 'Runner',
         items: [
             'Elisa Pantera',
         ],
