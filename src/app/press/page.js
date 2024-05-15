@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import WrapperSection from '@/wrappers/wrapper-section'
-import Link from '@/components/link'
 import Button from '@/components/button'
 
 
