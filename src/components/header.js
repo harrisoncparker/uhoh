@@ -7,10 +7,10 @@ import { useEffect, useState } from "react"
 
 const NavItems = () => (
     <>
-        <a href="/burst-your-bubble" className="text-3xl font-title border-b-[2px] border-brand-light md:hover:border-brand-dark text-center md:text-right inline-block">
+        <a href="/burst-your-bubble" className="text-2xl 2xl:text-3xl font-title border-b-[2px] border-brand-light md:hover:border-brand-dark text-center md:text-right inline-block">
             Burst Your Bubble
         </a>
-        <a href="/credits" className="text-3xl font-title border-b-[2px] border-brand-light md:hover:border-brand-dark mt-8 md:mt-0 md:ml-16 text-center md:text-right inline-block">
+        <a href="/credits" className="text-2xl 2xl:text-3xl font-title border-b-[2px] border-brand-light md:hover:border-brand-dark mt-8 md:mt-0 md:ml-16 text-center md:text-right inline-block">
             Credits
         </a>
     </>

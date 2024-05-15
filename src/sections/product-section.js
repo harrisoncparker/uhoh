@@ -4,6 +4,7 @@ import WrapperSection from '@/wrappers/wrapper-section'
 import ProductCard from '@/components/product-card'
 import ButtonBasket from '@/components/button-basket'
 import Link from '@/components/link'
+import Title from '@/components/title'
 
 import { additionalResources, getOtherProducts } from '@/data/products'
 
@@ -38,14 +39,14 @@ export default function ProductSection({ children, subtitle, product }) {
                             />
                         <div className="flex">
                             <div>
-                                <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.5] sm:leading-[1.5] md:leading-[1.5] font-title stroke-2">
+                                <Title>
                                     {product.title}
-                                </h1>
+                                </Title>
                                 {children}
                                 <div className="md:w-3/4 h-[2px] bg-brand-dark mt-8" />
                                 <div className="flex items-center mt-8">
                                     <ButtonBasket href={product.download} filename={`UhOh - ${product.title} - Poster.jpg`} />
-                                    <h2 className="text-3xl uppercase font-bold italic ml-8">
+                                    <h2 className="text-2xl 2xl:text-3xl uppercase font-bold italic ml-8">
                                         Resources
                                     </h2>
                                 </div>

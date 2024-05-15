@@ -24,7 +24,7 @@ export default function Home() {
                         </p>
                         <div className="mt-16">
                             <Button href="/burst-your-bubble" sparkle={true} size="lg">
-                                Burst your bubble
+                                Burst Your Bubble
                             </Button>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 import Link from '@/components/link'
 import WrapperSection from '@/wrappers/wrapper-section'
 import ProductCard from '@/components/product-card'
+import Title from '@/components/title'
 
 import { products } from '@/data/products'
 
@@ -10,9 +11,9 @@ export default function BurstYourBubble() {
             <section className="pt-12">
                 <WrapperSection>
                     <div>
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.5] sm:leading-[1.5] md:leading-[1.5] font-title stroke-2">
+                        <Title>
                             Director's Statement
-                        </h1>
+                        </Title>
                         <div className="font-bold">
                             <p className="mt-8">
                                 A few years ago a personal experience led me to realise that Virtual

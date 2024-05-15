@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import WrapperHome from '@/wrappers/wrapper-home'
+import Title from '@/components/title'
 
 import mainPosterImage from '@public/img/main-poster.jpg'
 import { creditsData } from '@/data/credits'
@@ -25,9 +26,10 @@ export default function CreditsPage() {
             <WrapperHome>
                 <div className="flex flex-col-reverse md:flex-row justify-center">
                     <div className="text-center md:text-right mt-16 md:mt-0">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl leading-[1.5] sm:leading-[1.5] md:leading-[1.5] font-title stroke-2 mb-10 md:mb-20">
+                        <Title>
                             Credits
-                        </h1>
+                        </Title>
+                        <div className="mb-10 md:mb-20" />
                         {creditsData.map((creditSection, key) => <CreditSection creditSection={creditSection} key={key} />)}
                     </div>
                     <div className="flex-grow md:ml-16 max-w-[400px] md:max-w-none mx-auto md:mx-0">
