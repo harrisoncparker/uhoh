@@ -2,15 +2,15 @@ import SparkleIcon from '@/components/svgs/sparkle-icon';
 
 const sparkleJSX = (
     <>
-        <span className="block absolute top-3 right-4 sm:top-3 sm:right-8 -translate-y-1/2 translate-x-1/2 rounded-full bg-brand-light size-8 sm:size-10 group-hover/button:bg-transparent" />
+        <span className="block absolute top-3 right-4 sm:top-3 sm:right-6 -translate-y-1/2 translate-x-1/2 rounded-full bg-brand-light size-8 sm:size-10 group-hover/button:bg-transparent" />
         <SparkleIcon svgClass={`
-            absolute top-3 right-4 sm:top-3 sm:right-8 -translate-y-1/2 translate-x-1/2 size-8 sm:size-12 stroke-0 stroke-brand-purple-700 
+            absolute top-3 right-4 sm:top-3 sm:right-6 -translate-y-1/2 translate-x-1/2 size-8 sm:size-12 stroke-0 stroke-brand-purple-700 
             group-hover/button:fill-brand-light group-hover/button:stroke-1
             `} />
     </>
 )
 
-export default function Button({ children, href, sparkle = false, inert = false, size = 'md' }) {
+export default function Button({ children, href, sparkle = false, inert = false, size = 'md', download = false}) {
 
     const external = href.charAt(0) !== '/';
 
@@ -20,7 +20,7 @@ export default function Button({ children, href, sparkle = false, inert = false,
             sizeClass = 'text-lg sm:text-xl px-6 pt-1 pb-2 sm:px-8 sm:pt-2 sm:pb-3'
             break;
         case 'lg':
-            sizeClass = 'text-2xl px-8 pt-2 pb-3 sm:px-12 sm:pt-3 sm:pb-5'
+            sizeClass = 'text-2xl px-8 pt-2 pb-3 sm:px-12 sm:pt-3 sm:pb-4 uppercase'
             break;
         default:
             sizeClass = 'text-lg sm:text-2xl px-6 pt-1 pb-2 sm:px-12 sm:pt-3 sm:pb-5'
@@ -43,6 +43,20 @@ export default function Button({ children, href, sparkle = false, inert = false,
                 </span>
                 { sparkle && sparkleJSX }
             </div>
+        )
+    }
+
+    if (download) {
+        return (
+            <a href={href}
+            className={wrapperClassName}
+            download={download}
+            >
+                <span className="font-bold italic">
+                    {children}
+                </span>
+                { sparkle && sparkleJSX }
+            </a>
         )
     }
 

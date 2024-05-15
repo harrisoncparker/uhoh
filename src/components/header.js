@@ -13,6 +13,9 @@ const NavItems = () => (
         <a href="/credits" className="text-3xl font-title border-b-[2px] border-brand-light md:hover:border-brand-dark mt-8 md:mt-0 md:ml-16 text-center md:text-right inline-block">
             Credits
         </a>
+        <a href="/press" className="text-3xl font-title border-b-[2px] border-brand-light md:hover:border-brand-dark mt-8 md:mt-0 md:ml-16 text-center md:text-right inline-block">
+            Press
+        </a>
     </>
 )
 
