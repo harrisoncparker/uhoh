@@ -15,7 +15,7 @@ export default function PipeLines() {
                         <Image src={pressPackStill}
                             placeholder="blur"
                             alt=""
-                            className="rounded-[20px] sm:rounded-[40px] border-2 border-brand-dark mb-8 md:mb-4 hidden md:block"
+                            className="rounded-[20px] sm:rounded-[40px] border-2 border-brand-dark mb-8 md:mb-4 mt-4 md:mt-0"
                             />
                     </div>
                     <div className="order-first md:order-none">

@@ -22,7 +22,7 @@ export const creditsData = [
         ],
     },
     {
-        heading: 'Executive Producers',
+        heading: 'Staring',
         items: [
             'Horatio Gould',
             'Jahmila Heath',
