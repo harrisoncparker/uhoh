@@ -31,7 +31,7 @@ export default function PipeLines() {
                             For feature enquiries please contact Sophia Melvin - sophia.melvin@kodemedia.com
                         </p>
                         <div className='mt-16'>
-                            <Button href="/pdf/press-pack.pdf" download='Uh Oh Press Pack' sparkle={true} size="lg">
+                            <Button href="/pdf/Uh Oh Press Pack.pdf" download sparkle={true} size="lg">
                                 Press Pack
                             </Button>
                         </div>
